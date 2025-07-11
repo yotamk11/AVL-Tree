@@ -216,8 +216,7 @@ class AVLTree(object):
             while pointer.parent is not None and pointer.key > new_node.key:
                 pointer = pointer.parent
             current = pointer
-            if pointer.parent is not None:
-                stopper = pointer
+
             while current.is_real_node():
                 parent = current
                 if key < current.key:
